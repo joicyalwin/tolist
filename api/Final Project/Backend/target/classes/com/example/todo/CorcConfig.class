@@ -1,0 +1,20 @@
+Êþº¾   = L   com/example/todo/CorsConfig   java/lang/Object <init> ()V Code
+  	   LineNumberTable LocalVariableTable this Lcom/example/todo/CorsConfig; 
+corsFilter -()Lorg/springframework/web/filter/CorsFilter; RuntimeVisibleAnnotations -Lorg/springframework/context/annotation/Bean;   <org/springframework/web/cors/UrlBasedCorsConfigurationSource
+  	   .org/springframework/web/cors/CorsConfiguration
+  	
+     java/lang/Boolean    valueOf (Z)Ljava/lang/Boolean;
+     ! setAllowCredentials (Ljava/lang/Boolean;)V # http://localhost:3000
+  % & ' addAllowedOrigin (Ljava/lang/String;)V ) *
+  + , ' addAllowedHeader .  OPTIONS
+  0 1 ' addAllowedMethod 3 GET 5 POST 7 PUT 9 DELETE ; /**
+  = > ? registerCorsConfiguration E(Ljava/lang/String;Lorg/springframework/web/cors/CorsConfiguration;)V  A )org/springframework/web/filter/CorsFilter
+ @ C  D 9(Lorg/springframework/web/cors/CorsConfigurationSource;)V source >Lorg/springframework/web/cors/UrlBasedCorsConfigurationSource; config 0Lorg/springframework/web/cors/CorsConfiguration; 
+SourceFile CorsConfig.java 6Lorg/springframework/context/annotation/Configuration; !                /     *· ±    
+       	 
+         
+                   ¼     R» Y· L» Y· M,¸ ¶ ,"¶ $,(¶ *,-¶ /,2¶ /,4¶ /,6¶ /,8¶ /+:,¶ <» @Y+· B°    
+   2    
+         $  *  0  6  <  B  I  
+        R  
+    J E F   B G H   I    J      K  
